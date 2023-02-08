@@ -151,24 +151,35 @@
     <section>
         <h2>Team Info</h2>
         <p>
-            International Roster Slots: <button type="button" class="number-btn" id="increase">+</button> 8 <button type="button" id="decrease">-</button><br />
+            International Roster Slots: <button type="button" class="number-btn" id="increase">+</button> 8 <button
+                type="button" id="decrease">-</button><br />
             <em>Teams are allocated 8 roster slots by default, but slots can be traded.</em>
         </p>
         <h2>Add Player</h2>
         <form id="add-player-form">
-            <label for="player-name">Player Name:</label><br>
-            <input type="text" id="player-name" name="player-name"><br>
-            <label>Annual Compensation:</label><br>
+            <label for="player-name">Player Name:</label><br />
+            <input type="text" id="player-name" name="player-name"><br />
+            
+            <label>Annual Compensation:</label><br />
             <input type="radio" id="reserve-min" name="compensation" value="reserve">
-                <label for="reserve-min">$67,360 - $85,443</label><br>
+                <label for="reserve-min"> $67,360 - $85,443 (Above Reserve Minimum)</label><br />
             <input type="radio" id="senior-min" name="compensation" value="senior">
-                <label for="senior-min">$85,444 - $210,444</label><br>
+                <label for="senior-min"> $85,444 - $210,444 (Above Senior Minimum)</label><br />
             <input type="radio" id="senior" name="compensation" value="senior-plus">
-                <label for="senior">$210,445 - $651,250</label><br>
+                <label for="senior"> $210,445 - $651,250 (Below Roster Maximum)</label><br />
             <input type="radio" id="tam" name="compensation" value="tam-dp">
-                <label for="tam">$651,251 - $1,651,250</label><br>
+                <label for="tam"> $651,251 - $1,651,250 (TAM DP Level)</label><br />
             <input type="radio" id="max" name="compensation" value="max-dp">
-                <label for="max">&#62;$1,651,250</label><br>
+                <label for="max"> &#62;$1,651,250 (Max DP Level)</label><br />
+            
+            <label>Special Designation:</label><br />
+            <input type="checkbox" id="u22-init" name="u22-init" value="u22-init">
+                <label for="u22-init"> U-22 Initiative</label><br />
+            <input type="checkbox" id="gen-adidas" name="gen-adidas" value="gen-adidas">
+                <label for="gen-adidas"> Generation Adidas</label><br />
+            <input type="checkbox" id="homegrown" name="homegrown" value="homegrown">
+                <label for="homegrown"> Homegrown</label><br />
+
             <button type="button" id="submit-btn">Add Player</button> <button type="reset" id="reset-btn">Clear Form</button>
         </form>
     </section>
